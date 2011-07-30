@@ -17,11 +17,7 @@ alias gdc='git-svn dcommit'
 alias gk='gitk --all &'
 
 alias gpatch='git diff master -p'
-# alias up='sake git:update' - need to priorities origin vs git-svn
-function gpall() {
-  git push rubyforge master --tags
-  git push origin master --tags
-}
+
 alias gitrm="git stat | grep deleted | awk '{print $3}' | xargs git rm"
 alias gitx="open -b nl.frim.GitX"
 
